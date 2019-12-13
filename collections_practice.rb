@@ -22,8 +22,6 @@ def kesha_maker (array)
   end
 end
 
-
-
 def greater_and_less_than_10 (array)
   hash = {
     "greater_than_10" => [],
@@ -39,8 +37,6 @@ def greater_and_less_than_10 (array)
   hash
 end
 
-
-
 def find_winners (hash)
   winners = []
   hash.each do |name, status| 
@@ -49,23 +45,17 @@ def find_winners (hash)
   winners
 end
 
-
-
 def find_a (array)
   array.select do |word|
     word.chr == "a"
   end
 end
 
-
-
 def sum_array (array)
   array.inject do |sum, num|
     sum + num
   end
 end
-
-
 
 def add_s (array)
   array.collect.with_index do |word, index|
@@ -76,8 +66,6 @@ def add_s (array)
     end
   end
 end
-
-
 
 def count_words (words)
   story_count = Hash.new
@@ -92,8 +80,6 @@ def count_words (words)
 
   story_count
 end
-
-
 
 def organize_songs_by_artist (tracks)
   hash = {}
